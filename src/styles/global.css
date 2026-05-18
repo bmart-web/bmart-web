@@ -279,3 +279,20 @@ footer a:hover {
   }
 
 }
+.trust {
+  background: white;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 48px;
+}
+
+.section-heading h2 {
+  margin-bottom: 18px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 1.12rem;
+}
