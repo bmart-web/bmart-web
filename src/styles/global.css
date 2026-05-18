@@ -63,12 +63,8 @@ nav a:hover {
 }
 
 .hero {
-  padding: 120px 8%;
-
-  background:
-    radial-gradient(circle at top left, rgba(37,99,235,.12), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(14,165,233,.10), transparent 35%),
-    #f8fafc;
+  padding: 7rem 0 5rem;
+  min-height: auto;
 }
 
 .eyebrow {
@@ -78,14 +74,12 @@ nav a:hover {
   text-transform: uppercase;
   margin-bottom: 18px;
 }
-
 .hero h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: .95;
-  max-width: 950px;
-  margin-bottom: 28px;
-  font-weight: 900;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
   letter-spacing: -0.04em;
+  max-width: 10ch;
+  margin-bottom: 1.5rem;
 }
 
 .hero p {
