@@ -1,11 +1,111 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const whatsapp = "https://wa.me/593999999999?text=Hola%20BMART%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones%20tecnol%C3%B3gicas";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+	title="BMART | Soluciones tecnológicas en Ecuador"
+	description="BMART ofrece soluciones tecnológicas en Ecuador: software, hardware, CCTV, ciberseguridad Sophos, redes, APIs, IA y protección de datos personales."
+>
+	<header>
+		<strong>BMART</strong>
+		<nav>
+	<a href="/">Inicio</a>
+	<a href="/ciberseguridad-sophos">Ciberseguridad</a>
+	<a href="/camaras-seguridad-cctv">CCTV</a>
+	<a href="/desarrollo-software-integraciones-api">APIs</a>
+	<a href="/ia-proteccion-datos">IA</a>
+	<a href="#contacto">Contacto</a>
+</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<p class="eyebrow">Soluciones tecnológicas para empresas en Ecuador</p>
+			<h1>Integramos tecnología, seguridad e inteligencia artificial para tu negocio</h1>
+			<p>
+				En BMART ayudamos a empresas a implementar software, hardware, redes,
+				CCTV, ciberseguridad, integraciones API, IA y protección de datos personales.
+			</p>
+
+			<div class="actions">
+				<a class="primary" href={whatsapp} target="_blank">Contactar por WhatsApp</a>
+				<a class="secondary" href="#servicios">Ver servicios</a>
+			</div>
+		</section>
+
+		<section id="servicios" class="section">
+	<h2>Servicios principales</h2>
+
+	<div class="grid">
+		<a class="card-link" href="/ciberseguridad-sophos">
+			<article>
+				<h3>Ciberseguridad Sophos</h3>
+				<p>Protección empresarial con soluciones Sophos, seguridad perimetral y endpoint.</p>
+			</article>
+		</a>
+
+		<a class="card-link" href="/camaras-seguridad-cctv">
+			<article>
+				<h3>CCTV y conteo de personas</h3>
+				<p>Cámaras de seguridad, videovigilancia y analítica para espacios físicos.</p>
+			</article>
+		</a>
+
+		<a class="card-link" href="/desarrollo-software-integraciones-api">
+			<article>
+				<h3>Desarrollo e integraciones API</h3>
+				<p>Automatización, integración de sistemas y desarrollo de soluciones a medida.</p>
+			</article>
+		</a>
+
+		<a class="card-link" href="/redes-infraestructura">
+			<article>
+				<h3>Redes e infraestructura</h3>
+				<p>Diseño, implementación y optimización de redes empresariales seguras.</p>
+			</article>
+		</a>
+
+		<a class="card-link" href="/ia-proteccion-datos">
+			<article>
+				<h3>IA y protección de datos</h3>
+				<p>Consultoría en inteligencia artificial y protección de datos personales.</p>
+			</article>
+		</a>
+
+		<article>
+			<h3>Software, hardware y mantenimiento</h3>
+			<p>Soluciones para ofimática, equipos, productividad y soporte tecnológico.</p>
+		</article>
+	</div>
+</section>
+
+		<section id="contacto" class="section cta">
+			<h2>¿Necesitas una solución tecnológica?</h2>
+			<p>Conversemos sobre tu proyecto y encontremos la mejor alternativa para tu empresa.</p>
+			<a class="primary" href={whatsapp} target="_blank">Hablar con BMART</a>
+		</section>
+	</main>
+<footer>
+	<div>
+		<strong>BMART</strong>
+		<p>Soluciones tecnológicas, ciberseguridad, IA, redes y desarrollo de software para empresas en Ecuador.</p>
+	</div>
+
+	<div>
+		<h4>Servicios</h4>
+		<a href="/ciberseguridad-sophos">Ciberseguridad Sophos</a>
+		<a href="/camaras-seguridad-cctv">CCTV</a>
+		<a href="/desarrollo-software-integraciones-api">APIs</a>
+		<a href="/redes-infraestructura">Redes</a>
+	</div>
+
+	<div>
+		<h4>Contacto</h4>
+		<a href={whatsapp} target="_blank">WhatsApp</a>
+		<a href="mailto:info@bmart.com.ec">info@bmart.com.ec</a>
+	</div>
+</footer>
+	<a class="float" href={whatsapp} target="_blank">WhatsApp</a>
 </Layout>

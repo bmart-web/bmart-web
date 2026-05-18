@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const whatsapp = "https://wa.me/593999999999?text=Hola%20BMART%2C%20quiero%20informaci%C3%B3n%20sobre%20ciberseguridad%20Sophos";
+---
+
+<Layout
+	title="Ciberseguridad Sophos en Ecuador | BMART"
+	description="BMART implementa soluciones Sophos de ciberseguridad para empresas en Ecuador: firewall, endpoint, protección perimetral y seguridad empresarial."
+>
+	<header>
+		<strong><a href="/">BMART</a></strong>
+		<nav>
+	<a href="/">Inicio</a>
+	<a href="/ciberseguridad-sophos">Ciberseguridad</a>
+	<a href="/camaras-seguridad-cctv">CCTV</a>
+	<a href="/desarrollo-software-integraciones-api">APIs</a>
+	<a href="/ia-proteccion-datos">IA</a>
+	<a href="/#contacto">Contacto</a>
+</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<p class="eyebrow">Ciberseguridad empresarial</p>
+			<h1>Ciberseguridad Sophos para empresas en Ecuador</h1>
+			<p>
+				Protegemos tu infraestructura tecnológica con soluciones Sophos para firewall,
+				endpoint, seguridad perimetral y defensa contra amenazas digitales.
+			</p>
+
+			<div class="actions">
+				<a class="primary" href={whatsapp} target="_blank">Solicitar asesoría</a>
+				<a class="secondary" href="/">Volver al inicio</a>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Soluciones de ciberseguridad</h2>
+
+			<div class="grid">
+				<article>
+					<h3>Firewall empresarial</h3>
+					<p>Implementación y configuración de firewall Sophos para proteger redes corporativas.</p>
+				</article>
+
+				<article>
+					<h3>Endpoint security</h3>
+					<p>Protección de estaciones de trabajo y servidores contra malware, ransomware y amenazas avanzadas.</p>
+				</article>
+
+				<article>
+					<h3>Consultoría de seguridad</h3>
+					<p>Evaluamos riesgos, brechas y controles para mejorar la postura de seguridad de tu empresa.</p>
+				</article>
+			</div>
+		</section>
+	</main>
+<footer>
+	<div>
+		<strong>BMART</strong>
+		<p>Soluciones tecnológicas, ciberseguridad, IA, redes y desarrollo de software para empresas en Ecuador.</p>
+	</div>
+
+	<div>
+		<h4>Servicios</h4>
+		<a href="/ciberseguridad-sophos">Ciberseguridad Sophos</a>
+		<a href="/camaras-seguridad-cctv">CCTV</a>
+		<a href="/desarrollo-software-integraciones-api">APIs</a>
+		<a href="/redes-infraestructura">Redes</a>
+	</div>
+
+	<div>
+		<h4>Contacto</h4>
+		<a href={whatsapp} target="_blank">WhatsApp</a>
+		<a href="mailto:info@bmart.com.ec">info@bmart.com.ec</a>
+	</div>
+</footer>
+	<a class="float" href={whatsapp} target="_blank">WhatsApp</a>
+</Layout>
