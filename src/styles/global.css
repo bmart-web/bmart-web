@@ -309,3 +309,77 @@ footer a:hover {
   color: var(--muted);
   font-size: 1.12rem;
 }
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1rem 5%;
+  }
+
+  nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero {
+    padding: 5rem 5% 4rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+    line-height: 1.05;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 4rem 5%;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .grid article {
+    padding: 1.5rem;
+  }
+
+  footer {
+    padding: 4rem 5%;
+  }
+
+}
