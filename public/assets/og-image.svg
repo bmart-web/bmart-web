@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#071526"/>
+  <circle cx="1000" cy="120" r="260" fill="#2563eb" opacity="0.22"/>
+  <circle cx="180" cy="520" r="220" fill="#0ea5e9" opacity="0.18"/>
+
+  <rect x="90" y="90" width="1020" height="450" rx="36" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+
+  <text x="120" y="210" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">BMART</text>
+  <text x="120" y="285" font-family="Arial, sans-serif" font-size="34" fill="#93c5fd">Soluciones tecnológicas en Ecuador</text>
+
+  <text x="120" y="385" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">Ciberseguridad · CCTV · APIs · IA</text>
+  <text x="120" y="455" font-family="Arial, sans-serif" font-size="30" fill="#cbd5e1">Software, hardware, redes e integraciones para empresas.</text>
+</svg>
