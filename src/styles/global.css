@@ -223,34 +223,43 @@ article p {
 footer {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
 
-  gap: 32px;
+  padding: 5rem 8%;
 
-  padding: 70px 8%;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 30%),
+    #071526;
 
-  background: #071526;
   color: white;
 }
 
 footer strong {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  color: white;
 }
 
 footer p {
   color: #bfd0e4;
   max-width: 520px;
+  line-height: 1.8;
+}
+
+footer h4 {
+  margin-top: 0;
+  color: white;
 }
 
 footer a {
   display: block;
-  margin: 12px 0;
-
+  margin: 0.75rem 0;
   color: #bfd0e4;
   text-decoration: none;
+  transition: color .2s ease;
 }
 
 footer a:hover {
-  color: white;
+  color: #60a5fa;
 }
 
 @media (max-width: 900px) {
