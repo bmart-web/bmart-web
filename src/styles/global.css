@@ -436,3 +436,50 @@ footer a:hover {
     padding: 12px 16px;
   }
 }
+
+/* =========================
+   ANIMACIONES SUAVES
+========================= */
+
+.hero,
+.section,
+footer {
+  animation: fadeUp 0.8s ease both;
+}
+
+.grid article {
+  animation: fadeUp 0.7s ease both;
+}
+
+.grid article:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.grid article:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.grid article:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
