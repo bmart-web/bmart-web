@@ -3,6 +3,44 @@ import Layout from "../layouts/Layout.astro";
 
 const whatsapp = "https://wa.me/593999999999?text=Hola%20BMART%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones%20tecnol%C3%B3gicas";
 ---
+<script>
+	const form = document.getElementById("contactForm") as HTMLFormElement | null;
+	const message = document.getElementById("formMessage");
+
+	form?.addEventListener("submit", async (event) => {
+		event.preventDefault();
+
+		const data = new FormData(form);
+
+		try {
+			const response = await fetch(form.action, {
+				method: "POST",
+				body: data,
+				headers: {
+					Accept: "application/json",
+				},
+			});
+
+			if (response.ok) {
+				form.reset();
+				if (message) {
+					message.textContent = "Mensaje enviado correctamente. Te contactaremos pronto.";
+					message.className = "form-message success";
+				}
+			} else {
+				if (message) {
+					message.textContent = "No se pudo enviar el mensaje. Intenta nuevamente.";
+					message.className = "form-message error";
+				}
+			}
+		} catch {
+			if (message) {
+				message.textContent = "Error de conexión. Intenta nuevamente.";
+				message.className = "form-message error";
+			}
+		}
+	});
+</script>
 
 <Layout
 	title="BMART | Soluciones tecnológicas en Ecuador"
@@ -141,7 +179,7 @@ const whatsapp = "https://wa.me/593999999999?text=Hola%20BMART%2C%20quiero%20inf
 		</p>
 	</div>
 
-	<form class="contact-form" action="https://formspree.io/f/xeedgdan" method="POST">
+	<form class="contact-form" id="contactForm" action="https://formspree.io/f/xeedgdan" method="POST">
 		<label>
 			Nombre
 			<input type="text" name="nombre" required />
@@ -176,6 +214,7 @@ const whatsapp = "https://wa.me/593999999999?text=Hola%20BMART%2C%20quiero%20inf
 		</label>
 
 		<button type="submit">Enviar solicitud</button>
+		<p class="form-message" id="formMessage"></p>
 	</form>
 </section>
 
