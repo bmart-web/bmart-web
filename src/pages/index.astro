@@ -131,11 +131,54 @@ const whatsapp = "https://wa.me/593999999999?text=Hola%20BMART%2C%20quiero%20inf
 	</div>
 </section>
 
-		<section id="contacto" class="section cta">
-			<h2>¿Necesitas una solución tecnológica?</h2>
-			<p>Conversemos sobre tu proyecto y encontremos la mejor alternativa para tu empresa.</p>
-			<a class="primary" href={whatsapp} target="_blank">Hablar con BMART</a>
-		</section>
+<section id="contacto" class="section contact-section">
+	<div>
+		<p class="eyebrow">Contacto</p>
+		<h2>Cuéntanos sobre tu proyecto</h2>
+		<p>
+			Completa el formulario y te contactaremos para entender tus necesidades
+			en tecnología, ciberseguridad, redes, software, CCTV o IA.
+		</p>
+	</div>
+
+	<form class="contact-form" action="https://formspree.io/f/xeedgdan" method="POST">
+		<label>
+			Nombre
+			<input type="text" name="nombre" required />
+		</label>
+
+		<label>
+			Correo
+			<input type="email" name="email" required />
+		</label>
+
+		<label>
+			Teléfono / WhatsApp
+			<input type="tel" name="telefono" />
+		</label>
+
+		<label>
+			Servicio de interés
+			<select name="servicio" required>
+				<option value="">Selecciona una opción</option>
+				<option>Ciberseguridad Sophos</option>
+				<option>CCTV y conteo de personas</option>
+				<option>Desarrollo de software e integraciones API</option>
+				<option>Redes e infraestructura</option>
+				<option>IA y protección de datos</option>
+				<option>Software, hardware y mantenimiento</option>
+			</select>
+		</label>
+
+		<label>
+			Mensaje
+			<textarea name="mensaje" rows="5" required></textarea>
+		</label>
+
+		<button type="submit">Enviar solicitud</button>
+	</form>
+</section>
+
 	</main>
 <footer>
 	<div>
