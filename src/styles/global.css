@@ -599,3 +599,17 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.form-message {
+  margin: 0.5rem 0 0;
+  font-weight: 700;
+}
+
+.form-message.success {
+  color: #16a34a;
+}
+
+.form-message.error {
+  color: #dc2626;
+}
+
