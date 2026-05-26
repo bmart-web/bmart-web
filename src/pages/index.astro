@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
+import Header from "../components/Header.astro";
 const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones%20tecnol%C3%B3gicas";
 ---
 <script>
@@ -46,23 +46,7 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 	title="BMART | Soluciones tecnológicas en Ecuador"
 	description="BMART ofrece soluciones tecnológicas en Ecuador: software, hardware, CCTV, ciberseguridad Sophos, redes, APIs, IA y protección de datos personales."
 >
-<header>
-	<strong>BMART</strong>
-
-	<button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-		☰
-	</button>
-
-	<nav id="mainNav">
-		<a href="/">Inicio</a>
-		<a href="/ciberseguridad-sophos">Ciberseguridad</a>
-		<a href="/camaras-seguridad-cctv">CCTV</a>
-		<a href="/desarrollo-software-integraciones-api">APIs</a>
-		<a href="/ia-proteccion-datos">IA</a>
-		<a href="#contacto">Contacto</a>
-	</nav>
-</header>
-
+<Header />
 	<main>
 		<section class="hero">
 			<p class="eyebrow">Soluciones tecnológicas para empresas en Ecuador</p>
