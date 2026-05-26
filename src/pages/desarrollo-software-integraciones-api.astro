@@ -13,7 +13,18 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 			<h1>Desarrollo de software e integraciones API</h1>
 			<p>Automatizamos procesos, conectamos sistemas y desarrollamos soluciones digitales a medida para empresas.</p>
 			<div class="actions">
-				<a class="primary" href={whatsapp} target="_blank">Solicitar asesoría</a>
+				<a
+    class="primary"
+    href={whatsapp}
+    target="_blank"
+    rel="noopener noreferrer"
+    onclick="gtag('event', 'click_whatsapp', {
+      event_category: 'contacto',
+      event_label: 'apis'
+    })"
+  >
+    Solicitar asesoría
+  </a>
 				<a class="secondary" href="/">Volver al inicio</a>
 			</div>
 		</section>
@@ -34,9 +45,31 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 
 	<div>
 		<h4>Contacto</h4>
-		<a href={whatsapp} target="_blank">WhatsApp</a>
+		<a
+    href={whatsapp}
+    target="_blank"
+    rel="noopener noreferrer"
+    onclick="gtag('event', 'click_whatsapp_footer', {
+      event_category: 'contacto',
+      event_label: 'apis_footer'
+    })"
+  >
+    WhatsApp
+  </a>
+
 		<a href="mailto:info@bmart.com.ec">info@bmart.com.ec</a>
 	</div>
 </footer>
-	<a class="float" href={whatsapp} target="_blank">WhatsApp</a>
+	<a
+  class="float"
+  href={whatsapp}
+  target="_blank"
+  rel="noopener noreferrer"
+  onclick="gtag('event', 'click_whatsapp_float', {
+    event_category: 'contacto',
+    event_label: 'apis_float'
+  })"
+>
+  WhatsApp
+</a>
 </Layout>

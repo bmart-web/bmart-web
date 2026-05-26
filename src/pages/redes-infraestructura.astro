@@ -13,8 +13,19 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 			<h1>Implementación de redes e infraestructura</h1>
 			<p>Diseñamos, implementamos y optimizamos redes empresariales seguras, estables y escalables.</p>
 			<div class="actions">
-				<a class="primary" href={whatsapp} target="_blank">Solicitar asesoría</a>
-				<a class="secondary" href="/">Volver al inicio</a>
+				<a
+    class="primary"
+    href={whatsapp}
+    target="_blank"
+    rel="noopener noreferrer"
+    onclick="gtag('event', 'click_whatsapp', {
+      event_category: 'contacto',
+      event_label: 'redes'
+    })"
+  >
+    Solicitar asesoría
+  </a>
+  				<a class="secondary" href="/">Volver al inicio</a>
 			</div>
 		</section>
 	</main>
@@ -34,9 +45,31 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 
 	<div>
 		<h4>Contacto</h4>
-		<a href={whatsapp} target="_blank">WhatsApp</a>
+		<a
+    href={whatsapp}
+    target="_blank"
+    rel="noopener noreferrer"
+    onclick="gtag('event', 'click_whatsapp_footer', {
+      event_category: 'contacto',
+      event_label: 'redes_footer'
+    })"
+  >
+    WhatsApp
+  </a>
+
 		<a href="mailto:info@bmart.com.ec">info@bmart.com.ec</a>
 	</div>
 </footer>
-	<a class="float" href={whatsapp} target="_blank">WhatsApp</a>
+	<a
+  class="float"
+  href={whatsapp}
+  target="_blank"
+  rel="noopener noreferrer"
+  onclick="gtag('event', 'click_whatsapp_float', {
+    event_category: 'contacto',
+    event_label: 'redes_float'
+  })"
+>
+  WhatsApp
+</a>
 </Layout>
