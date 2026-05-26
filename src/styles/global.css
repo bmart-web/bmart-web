@@ -789,3 +789,46 @@ nav a:hover::after{
 .float:hover{
   transform:translateY(-4px) scale(1.05);
 }
+
+.stats {
+  padding: 5rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: rgba(255,255,255,.82);
+
+  border: 1px solid rgba(226,232,240,.9);
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(15,23,42,.05);
+
+  transition: .25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(37,99,235,.10);
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: .5rem;
+}
+
+.stat-card p {
+  color: var(--muted);
+  font-weight: 600;
+  line-height: 1.6;
+}
