@@ -918,7 +918,7 @@ nav a:hover::after{
 }
 
 .logo img {
-  width: 42px;
-  height: 42px;
+  width: 150px;
+  height: auto;
   object-fit: contain;
 }
