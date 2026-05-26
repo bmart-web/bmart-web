@@ -3,17 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20informaci%C3%B3n%20sobre%20ciberseguridad%20Sophos";
 ---
-<a
-  href={whatsapp}
-  target="_blank"
-  rel="noopener noreferrer"
-  onclick="gtag('event', 'click_whatsapp', {
-    event_category: 'contacto',
-    event_label: 'cctv'
-  })"
->
-  Contactar por WhatsApp
-</a>
 
 <Layout
 	title="Ciberseguridad Sophos en Ecuador | BMART"
@@ -30,7 +19,18 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 			</p>
 
 			<div class="actions">
-				<a class="primary" href={whatsapp} target="_blank">Solicitar asesoría</a>
+				<a
+    class="primary"
+    href={whatsapp}
+    target="_blank"
+    rel="noopener noreferrer"
+    onclick="gtag('event', 'click_whatsapp', {
+      event_category: 'contacto',
+      event_label: 'sophos'
+    })"
+  >
+    Solicitar asesoría
+  </a>
 				<a class="secondary" href="/">Volver al inicio</a>
 			</div>
 		</section>
