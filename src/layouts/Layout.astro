@@ -57,6 +57,16 @@ const { title, description } = Astro.props;
 		"Consultoría en inteligencia artificial"
 	]
 })} />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGLC9FGNYW"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VGLC9FGNYW');
+</script>
+
 	</head>
 
 	<body>
