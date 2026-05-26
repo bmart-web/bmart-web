@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bmart.com.ec/sitemap-index.xml
+Sitemap: https://www.bmart.com.ec/sitemap-index.xml

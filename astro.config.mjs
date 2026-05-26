@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://bmart.com.ec',
+  site: 'https://www.bmart.com.ec',
   integrations: [sitemap()],
 });
