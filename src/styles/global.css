@@ -932,7 +932,7 @@ nav a:hover::after{
 }
 
 .brand-card {
-  min-height: 140px;
+  min-height: 165px;
   padding: 1.5rem;
 
   display: flex;
@@ -948,22 +948,25 @@ nav a:hover::after{
 }
 
 .brand-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
   border-color: rgba(37,99,235,.35);
-  box-shadow: 0 20px 45px rgba(37,99,235,.12);
+
+  box-shadow:
+    0 20px 45px rgba(37,99,235,.12),
+    0 8px 20px rgba(15,23,42,.08);
 }
 
 .brand-card img {
-  max-width: 180px;
-  max-height: 70px;
+  max-width: 210px;
+  max-height: 90px;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: .9;
+  opacity: .88;
   transition: .25s ease;
 }
 
 .brand-card:hover img {
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
