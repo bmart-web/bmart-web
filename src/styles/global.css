@@ -970,3 +970,74 @@ nav a:hover::after{
   opacity: 1;
   transform: scale(1.08);
 }
+
+.site-footer {
+  padding: 4rem 8% 2rem;
+  background: #0f172a;
+  color: #cbd5e1;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.site-footer p {
+  max-width: 420px;
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+.site-footer h4 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.site-footer a,
+.site-footer span {
+  display: block;
+  color: #94a3b8;
+  text-decoration: none;
+  margin-bottom: .7rem;
+  font-weight: 600;
+}
+
+.site-footer a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(148, 163, 184, .2);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  color: #64748b;
+  font-size: .95rem;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
