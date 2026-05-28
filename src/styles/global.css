@@ -1071,7 +1071,9 @@ nav a:hover::after{
 }
 
 .hero-image img {
-  width: 100%;
+  width: 92%;
+  margin-left: auto;
+  display: block;
   border-radius: 24px;
   object-fit: cover;
 
@@ -1088,5 +1090,7 @@ nav a:hover::after{
 
   .hero-image {
     order: -1;
+     display: flex;
+     justify-content: flex-end;
   }
 }
