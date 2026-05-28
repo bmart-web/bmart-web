@@ -49,30 +49,58 @@ const whatsapp = "https://wa.me/593984919911?text=Hola%20BMART%2C%20quiero%20inf
 >
 <Header />
 	<main>
-		<section class="hero">
-			<p class="eyebrow">Soluciones tecnológicas para empresas en Ecuador</p>
-			<h1>Integramos tecnología, seguridad e inteligencia artificial para tu negocio</h1>
-			<p>
-				En BMART ayudamos a empresas a implementar software, hardware, redes,
-				CCTV, ciberseguridad, integraciones API, IA y protección de datos personales.
-			</p>
+	<section class="hero">
 
-			<div class="actions">
-				<a
-    class="primary"
-    href={whatsapp}
-    target="_blank"
-    rel="noopener noreferrer"
-    onclick="gtag('event', 'click_whatsapp', {
-      event_category: 'contacto',
-      event_label: 'home'
-    })"
-  >
-    Solicitar asesoría
-  </a>
-  				<a class="secondary" href="#servicios">Ver servicios</a>
-			</div>
-		</section>
+  <div class="hero-grid">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        Soluciones tecnológicas para empresas en Ecuador
+      </p>
+
+      <h1>
+        Integramos tecnología, seguridad e inteligencia artificial para tu negocio
+      </h1>
+
+      <p>
+        En BMART ayudamos a empresas a implementar software, hardware, redes,
+        CCTV, ciberseguridad, integraciones API, IA y protección de datos personales.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="primary"
+          href={whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="gtag('event', 'click_whatsapp', {
+            event_category: 'contacto',
+            event_label: 'home'
+          })"
+        >
+          Solicitar asesoría
+        </a>
+
+        <a class="secondary" href="#servicios">
+          Ver servicios
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="/images/logo-tech.webp"
+        alt="Infraestructura tecnológica empresarial"
+      />
+    </div>
+
+  </div>
+
+</section>
 
 <section class="section trust">
 	<div class="section-heading">
