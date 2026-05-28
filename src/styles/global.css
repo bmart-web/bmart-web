@@ -1148,3 +1148,38 @@ nav a:hover::after{
 
   box-shadow: 0 12px 28px rgba(37, 99, 235, .22);
 }
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.use-cases-grid article {
+  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(226,232,240,.9);
+  border-radius: 22px;
+  padding: 1.5rem;
+  display: grid;
+  gap: .6rem;
+  box-shadow: 0 12px 30px rgba(15,23,42,.05);
+  transition: .25s ease;
+  font-size: 1.5rem;
+}
+
+.use-cases-grid article:hover {
+  transform: translateY(-6px);
+  border-color: rgba(37,99,235,.35);
+  box-shadow: 0 20px 45px rgba(37,99,235,.12);
+}
+
+.use-cases-grid strong {
+  color: var(--dark);
+  font-size: 1.15rem;
+}
+
+.use-cases-grid span {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
